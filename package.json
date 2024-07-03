@@ -1,0 +1,53 @@
+{
+  "name": "egg-api",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5",
+    "egg": "^3.17.5",
+    "egg-scripts": "2",
+    "egg-sequelize": "^6.0.0",
+    "egg-validate": "^2.0.2",
+    "file-system-cache": "^2.4.4",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.10.1",
+    "nanoid": "^5.0.7",
+    "node-cache": "^5.1.2",
+    "node-easywechat": "^3.7.1",
+    "node-jsencrypt": "^1.0.0",
+    "uuid": "^10.0.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "egg-bin": "6",
+    "egg-mock": "5",
+    "eslint": "8",
+    "eslint-config-egg": "13",
+    "sequelize-cli": "^6.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-egg-api",
+    "stop": "egg-scripts stop --title=egg-server-egg-api",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test:local",
+    "test:local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "qc2168",
+  "license": "MIT"
+}
