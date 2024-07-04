@@ -12,6 +12,12 @@ class FileCacheService extends Service {
   async set(key, value, ttl) {
     await cache.set(key, value, ttl || 60 * 60 * 24 * 3);
   }
+  async remove(key) {
+    await cache.remove(key);
+  }
+  async clear() {
+    await cache.clear();
+  }
 }
 module.exports = FileCacheService;
 

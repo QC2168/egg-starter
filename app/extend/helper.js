@@ -28,6 +28,14 @@ module.exports = {
       value,
     });
   },
+  async removeCache(key) {
+    await this.ctx.app.messenger.sendToApp('removeCache', {
+      key
+    });
+  },
+  async clearCache() {
+    await this.ctx.app.messenger.sendToApp('clearCache');
+  },
   generateUUID() {
     return uuidv4();
   },
