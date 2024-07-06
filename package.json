@@ -7,9 +7,9 @@
     "declarations": true
   },
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.5.0",
     "crypto-js": "^4.2.0",
     "dayjs": "^1.11.11",
-    "dotenv": "^16.4.5",
     "egg": "^3.17.5",
     "egg-scripts": "2",
     "egg-sequelize": "^6.0.0",
@@ -37,7 +37,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-egg-api",
     "stop": "egg-scripts stop --title=egg-server-egg-api",
-    "dev": "egg-bin dev",
+    "dev": "dotenvx run -f .env.development -- egg-bin dev",
     "test": "npm run lint -- --fix && npm run test:local",
     "test:local": "egg-bin test",
     "cov": "egg-bin cov",
