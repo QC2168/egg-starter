@@ -1,7 +1,7 @@
 {
-  "name": "egg-api",
+  "name": "egg-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "这是一个可以让您在短时间内构建Api的框架，它是基于EggJs官方的simple模板进行二次封装开发",
   "private": true,
   "egg": {
     "declarations": true
@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/QC2168/egg-starter"
   },
   "author": "qc2168",
   "license": "MIT"
