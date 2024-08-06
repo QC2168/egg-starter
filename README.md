@@ -64,3 +64,19 @@ npm run dev
 ## 部署
 
 [EggJs-应用部署](https://www.eggjs.org/zh-CN/core/deployment)
+
+## 数据库迁移
+
+您可以选用[migrations](https://sequelize.org/docs/v6/other-topics/migrations/)来管理数据库迁移
+
+也可以直接使用[模型同步](https://sequelize.org/docs/v6/core-concepts/model-basics/#model-synchronization)的方式来生成数据库表（更快更便捷）
+
+👇 开启模型同步的方式，请在`.env.development`文件中配置`DB_MODE=syncDB`即可
+
+```bash
+# .env.development
+# 是否使用模型同步更新数据库
+DB_MODE=syncDB
+```
+
+⚠️ 推荐使用数据库迁移的方式，因为模型同步的方式可能会导致数据丢失，且不支持回滚操作！！

@@ -17,5 +17,12 @@ module.exports = app => {
       await ctx.service.fileCache.clear();
     });
   });
+
+  // sync model to db
+  if (process.env.NODE_ENV === 'development' && process.env.DB_MODE === 'syncDB') {
+    app.beforeStart(async () => {
+      await app.model.sync({ alter: true });
+    });
+  }
 };
 
