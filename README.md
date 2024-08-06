@@ -12,6 +12,7 @@
 - [x] 🌐 纯Javascript
 - [x] 🐳 Sequelize Mysql
 - [x] 🚀 DB Migration
+- [x] 📂 基于文件系统缓存服务
 - [x] 📚 集成Swaggar文档
 - [x] 🦄 集成Vscode代码片段
 
