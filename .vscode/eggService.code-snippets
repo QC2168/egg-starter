@@ -1,0 +1,15 @@
+{
+	"eggService": {
+		"prefix": "eggService",
+		"body": [
+			"const Service = require('egg').Service;",
+			"",
+			"class XXService extends Service {",
+			"",
+			"}",
+			"",
+			"module.exports = XXService;"
+		],
+		"description": "eggService"
+	}
+}

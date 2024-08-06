@@ -13,6 +13,7 @@
 - [x] 🐳 Sequelize Mysql
 - [x] 🚀 DB Migration
 - [x] 📚 集成Swaggar文档
+- [x] 🦄 集成Vscode代码片段
 
 ## 如何食用
 

@@ -1,0 +1,17 @@
+{
+	"eggController": {
+		"prefix": "eggController",
+		"body": [
+			"const Controller = require('egg').Controller;",
+			"class XXController extends Controller {",
+			"  async create() {",
+			"    const { ctx, service } = this;",
+			"",
+			"  }",
+			"}",
+			"module.exports = XXController;",
+			""
+		],
+		"description": "eggController"
+	}
+}
