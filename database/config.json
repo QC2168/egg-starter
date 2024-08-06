@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "123456",
-    "database": "egg_test",
+    "database": "egg_starter",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
