@@ -14,6 +14,11 @@ module.exports = appInfo => {
   config.logger = {
     outputJSON: true,
   }
+  config.cluster = {
+    listen: {
+      port: process.env.SERVER_PORT
+    }
+  }
   config.sequelize = {
     dialect: process.env.DB_DIALECT,
     host: process.env.DB_HOST,
