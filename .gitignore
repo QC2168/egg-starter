@@ -14,5 +14,6 @@ run/
 typings/
 .nyc_output/
 logs
+.cache
 
 /app/public
