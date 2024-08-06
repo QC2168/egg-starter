@@ -34,7 +34,7 @@ module.exports = {
     });
   },
 
-  async down(queryInterface, Sequelize) {
+  async down(queryInterface) {
     // 使用 queryInterface 删除表
     await queryInterface.dropTable('users');
   }

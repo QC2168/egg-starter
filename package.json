@@ -28,10 +28,12 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.8.0",
     "egg-bin": "6",
     "egg-mock": "5",
-    "eslint": "8",
+    "eslint": "^9.8.0",
     "eslint-config-egg": "13",
+    "globals": "^15.9.0",
     "sequelize-cli": "^6.6.2"
   },
   "engines": {

@@ -36,7 +36,7 @@ class FileController extends Controller {
         filename,
         link: `${process.env.MAIN_URL}:${process.env.SERVER_PORT}/public/uploadForFile/${dirName}/${filename}`
       })
-    } catch (e) {
+    } catch {
       ctx.status = 500;
       ctx.body = ctx.resultErrorData('上传文件失败')
     }

@@ -1,4 +1,3 @@
-/* eslint valid-jsdoc: "off" */
 require('@dotenvx/dotenvx').config()
 /**
  * @param {Egg.EggAppInfo} appInfo app info
