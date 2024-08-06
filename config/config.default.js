@@ -88,14 +88,15 @@ module.exports = appInfo => {
         description: 'Find more info here'
       },
       // 服务地址
-      host: '127.0.0.1:7001',
+      host: `127.0.0.1:${process.env.SERVER_PORT}`,
       schemes: ['http', 'https'],
       consumes: ['application/json'],
       produces: ['application/json'],
       // 定义标签，用于分类
       tags: [
         { name: 'User', description: '用户模块' },
-        { name: 'Demo', description: 'Demo模块' }
+        { name: 'Demo', description: 'Demo模块' },
+        { name: 'File', description: '文件模块' }
       ],
       typescriptJsonSchema: false,
     }

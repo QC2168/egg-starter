@@ -8,4 +8,6 @@ module.exports = app => {
   router.get(apiPrefix, controller.home.index);
   router.get('/demo', controller.home.demo);
   router.resources('users','/users', controller.users);
+  // 文件上传类
+  router.post('/file/upload', controller.file.upload);
 };
